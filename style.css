@@ -9,16 +9,21 @@
   min-height: 100vh;
   background-color: rgba(255, 192, 203, 0.26);
   font-family: "Montserrat", sans-serif;
-  padding-top: 2vw;
+  padding: 3vw;
   transition: all 0.8s ease;
 }
 .container .form {
-  max-width: 450px;
+  max-width: 550px;
   background-color: #f2e1f8;
   margin: 0 auto;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 0 12px black;
+}
+@media (max-width: 360px) {
+  .container .form h2 {
+    font-size: 19px;
+  }
 }
 .container .form .form-control {
   display: flex;
@@ -30,12 +35,26 @@
   font-size: 17px;
   letter-spacing: -0.5px;
 }
+@media (max-width: 360px) {
+  .container .form .form-control label {
+    font-size: 15px;
+  }
+}
 .container .form .form-control input, .container .form .form-control select {
   display: inline-block;
   height: 35px;
   outline: none;
   border: 2px solid transparent;
   padding-left: 15px;
+}
+@media (max-width: 360px) {
+  .container .form .form-control input, .container .form .form-control select {
+    padding-left: 5px;
+    font-size: 14px;
+  }
+  .container .form .form-control input::placeholder, .container .form .form-control select::placeholder {
+    font-size: 14px;
+  }
 }
 .container .form .form-control input option, .container .form .form-control select option {
   display: inline-block;
