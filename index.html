@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container">
+        <form id="form" class="form">
+
+            <h2>Зарегистрироваться</h2>
+
+            <div class="form-control">
+                <label for="username">Ім'я користувача</label>
+                <input type="text" id="username" placeholder="Введіть ваше ім'я">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Адреса електронної пошти</label>
+                <input type="text" id="email" placeholder="Введіть email">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="country">Оберіть країну проживання</label>
+                <select id="country">
+                    <option class="country_opt" value="0">Оберіть країну проживання</option>
+                    <option class="country_opt" value="1">Україна</option>
+                    <option class="country_opt" value="2">Польща</option>
+                    <option class="country_opt" value="3">Німеччина</option>
+                    <option class="country_opt" value="4">США</option>
+                    <option class="country_opt" value="5">Литва</option>
+                    <option class="country_opt" value="6">Латвія</option>
+                    <option class="country_opt" value="7">Естонія</option>
+                    <option class="country_opt" value="8">Канада</option>
+                    <option class="country_opt" value="9">Франція</option>
+                    <option class="country_opt" value="10">Інша країна</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="city">Оберіть мiсто проживання</label>
+                <select id="city">
+                    <option>Це моє місто</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="pass">Пароль</label>
+                <input type="password" id="pass" placeholder="Введіть пароль (щонайменше 8 символів)">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="pass2">Підтвердження пароля</label>
+                <input type="password" id="pass2" placeholder="Повторіть пароль (щонайменше 8 символів)">
+                <small>Error message</small>
+            </div>
+
+            <button class="btn" type="submit">Зареєструватися</button>
+        </form>
+        <div id="toasts"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="city.js"></script>
+</body>
+</html>
